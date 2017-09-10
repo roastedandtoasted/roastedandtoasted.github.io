@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Elsie's Website</title>
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+</head>
+<style>
+	body{
+		font-family: 'Lobster', cursive;
+		color: white; 
+		background-color: black;
+	}
+	.show {
+		width: 200px;
+		height: 500px;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		display: inline-block;
+		transition: 0.5s;
+	}
+
+	.show1 {
+		background-image: url('images/dance_moms.jpg');
+	}
+	.show2 {
+		background-image: url('images/parksandrecreation.jpg');
+	}
+	.show3{
+		background-image: url('images/harrypotter.jpg');
+	}
+	.show4{
+		background-image: url('images/TheGoodPlace.jpg');
+	}
+	.show5{
+		background-image: url('images/Pitchperfect2.jpg');
+	}
+	.show6{
+		background-image: url('images/riverdale.jpg');
+	}
+	.show7{
+		background-image: url('images/americasgottalent.jpg');
+	}
+
+</style>
+
+<body>
+
+<script>
+$(document).ready(function() {
+	$(".show").hover(function() {
+		$(this).width(300)
+	}, function() {
+		$(this).width(200)
+	})
+
+	$(".show1").click(function() {
+		$(".movie").html('<iframe width="560" height="315" src="https://www.youtube.com/embed/dEr2n9AAUUc" frameborder="0" allowfullscreen></iframe>')
+	})
+
+	$(".show2").click(function() {
+		$(".movie").html('<iframe width="560" height="315" src="https://www.youtube.com/embed/9djCOPHOvOw" frameborder="0" allowfullscreen></iframe>')
+
+	})
+$(".show3").click(function() {
+		$(".movie").html('<iframe width="560" height="315" src="https://www.youtube.com/embed/K1KPcXRMMo4" frameborder="0" allowfullscreen></iframe>')
+
+	})
+$(".show4").click(function() {
+		$(".movie").html('<iframe width="560" height="315" src="https://www.youtube.com/embed/RfBgT5djaQw" frameborder="0" allowfullscreen></iframe>')
+
+	})
+$(".show5").click(function() {
+		$(".movie").html('<iframe width="560" height="315" src="https://www.youtube.com/embed/KBwOYQd21TY" frameborder="0" allowfullscreen></iframe>')
+
+	})
+$(".show6").click(function() {
+		$(".movie").html('<iframe width="560" height="315" src="https://www.youtube.com/embed/9XmFTADupMc" frameborder="0" allowfullscreen></iframe> -->')
+
+	})
+	$(".show7").click(function() {
+		$(".movie").html('<iframe width="560" height="315" src="https://www.youtube.com/embed/0Opr_uoVlF8" frameborder="0" allowfullscreen></iframe>')
+
+	})
+
+
+
+})
+</script>
+
+<div class="movie"></div>
+
+<div class="show show1"></div>
+<div class="show show2"></div>
+<div class="show show3"></div>
+<div class="show show4"></div>
+<div class="show show5"></div>
+<div class="show show6"></div>
+<div class="show show7"></div>
+
+</body>
+</html>
